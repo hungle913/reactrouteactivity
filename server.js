@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/ReactRouter");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://user1:password1@ds161209.mlab.com:61209/heroku_7b9stvgk");
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
